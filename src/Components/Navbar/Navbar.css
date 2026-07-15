@@ -6,8 +6,10 @@ nav {
   padding: 0 20px;
 }
 
-.nav-logo img {
-  width: 90px;
+.nav-brand h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 10px 0;
 }
 
 nav ul {

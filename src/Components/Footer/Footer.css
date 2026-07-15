@@ -1,25 +1,37 @@
 footer {
   background-color: #111e38;
   color: #fff;
-  padding: 20px;
+  padding: 30px 20px;
   text-align: center;
 }
 
-footer img {
-  width: 100px;
+.footer-copyright {
+  margin-bottom: 15px;
+}
+
+.footer-copyright p {
+  font-size: 0.95rem;
+  margin: 0;
 }
 
 .footer-social-media {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 15px;
 }
+
 .footer-social-media li {
   list-style: none;
-  margin: 10px;
 }
 
 .footer-social-media li a {
   text-decoration: none;
   color: #fcb212;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social-media li a:hover {
+  color: #fff;
 }

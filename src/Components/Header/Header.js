@@ -1,40 +1,41 @@
 import React from "react";
-import Typical from "react-typical";
+import TypingAnimation from "../TypingAnimation/TypingAnimation";
 import profileImg from "../../assets/profile.png";
 import "./Header.css";
 const Header = () => {
+  const handleHireMe = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const roles = [
+    "Frontend Developer",
+    "React Developer",
+    "Java Backend Developer",
+    "Full Stack Developer",
+  ];
+
   return (
-    <div className="header-container">
+    <div id="home" className="header-container">
       {/* header content */}
       <div className="header-content">
-        <h1>Hy! Am</h1>
+        <h1>Hi! I'm</h1>
         <h2 className="fullname">Aryan Basatia</h2>
         <h2>
-          I'm a {""}
-          <Typical
-            steps={[
-              "Full Stack Developer 🚀",
-              1000,
-              "Frontend Developer ✅",
-              1000,
-              "Backend Developer 🏆",
-              1000,
-
-              "React Developer ⚛️",
-              1000,
-            ]}
-            loop={Infinity}
-            wrapper="b"
-          />
+          A <TypingAnimation texts={roles} speed={80} displayDuration={2000} />
         </h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum sunt
-          necessitatibus, quis sit, aliquid at voluptas laboriosam nulla eius
-          modi saepe, aliquam fugit fuga alias sed a? Quidem, nesciunt earum.
+          I'm a passionate frontend developer specializing in React with a focus
+          on creating beautiful, responsive web applications. Currently
+          expanding my skills into Java backend development to become a
+          full-stack developer. I love building user-friendly interfaces and
+          solving complex problems with clean code.
         </p>
         {/* payment links */}
         <div className="header-payment-container">
-          <button>Hire Me</button>
+          <button onClick={handleHireMe}>Hire Me</button>
           <i className="fa-brands fa-paypal"></i>
           <i className="fa-brands fa-cc-visa"></i>
           <i className="fa-brands fa-cc-mastercard"></i>

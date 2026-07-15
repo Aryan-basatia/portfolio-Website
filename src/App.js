@@ -1,16 +1,18 @@
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Navbar from "./Components/Navbar/Navbar";
-import Services from "./Components/Services/Services";
+import About from "./Components/About/About";
 import Works from "./Components/Works/Works";
+import Contact from "./Components/Contact/Contact";
 
 function App() {
   return (
     <div>
       <Navbar />
       <Header />
-      <Services />
+      <About />
       <Works />
+      <Contact />
       <Footer />
     </div>
   );

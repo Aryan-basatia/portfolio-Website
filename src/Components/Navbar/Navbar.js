@@ -1,25 +1,41 @@
 import React from "react";
 import "./Navbar.css";
-import logo from "../../assets/logo.png";
+
 const Navbar = () => {
+  const handleNavClick = (e, targetId) => {
+    e.preventDefault();
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav>
-      <div className="nav-logo">
-        <img src={logo} alt="logo" />
+      <div className="nav-brand">
+        <h2>Aryan Basatia</h2>
       </div>
       <div className="nav-links">
         <ul>
           <li>
-            <a href="/">Home</a>
+            <a href="#home" onClick={(e) => handleNavClick(e, "home")}>
+              Home
+            </a>
           </li>
           <li>
-            <a href="/">About</a>
+            <a href="#about" onClick={(e) => handleNavClick(e, "about")}>
+              About
+            </a>
           </li>
           <li>
-            <a href="/">Services</a>
+            <a href="#works" onClick={(e) => handleNavClick(e, "works")}>
+              Portfolio
+            </a>
           </li>
           <li>
-            <a href="/">Portofolio</a>
+            <a href="#contact" onClick={(e) => handleNavClick(e, "contact")}>
+              Contact
+            </a>
           </li>
         </ul>
       </div>

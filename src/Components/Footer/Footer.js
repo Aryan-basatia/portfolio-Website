@@ -1,41 +1,30 @@
 import React from "react";
-import logo from "../../assets/logo.png";
 import "./Footer.css";
+
 const Footer = () => {
   return (
     <footer>
-      <div className="footer-logo">
-        <img src={logo} alt="logo" />
-      </div>
-
       {/* copyright */}
-      <div className="footer-cpyright">
-        <p>© 2022 I-Aryan Basatia. All Right reserved</p>
+      <div className="footer-copyright">
+        <p>© 2026 Aryan Basatia. All Rights Reserved</p>
       </div>
       {/* social */}
       <ul className="footer-social-media">
         <li>
-          <a href="https://www.youtube.com/c/inovotek-academy">
-            <i className="fa-brands fa-facebook-f"></i>
+          <a
+            href="https://github.com/Aryan-basatia"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa-brands fa-github"></i>
           </a>
         </li>
         <li>
-          <a href="https://www.youtube.com/c/inovotek-academy">
-            <i className="fa-brands fa-twitter"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/c/inovotek-academy">
-            <i className="fa-brands fa-instagram"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/c/inovotek-academy">
-            <i className="fa-brands fa-youtube"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/c/inovotek-academy">
+          <a
+            href="https://www.linkedin.com/in/aryan-basatia/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fa-brands fa-linkedin"></i>
           </a>
         </li>
